@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide Web (WWW)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.6;
+        }
+        
+        /* Navigation */
+        nav {
+            background: linear-gradient(90deg, #0a192f 0%, #173a5e 50%, #2c5282 100%);
+            padding: 0.75rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid #e2e8f0;
+            z-index: 100;
+        }
+        
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.25rem;
+        }
+        
+        nav a {
+            color: #334155;
+            text-decoration: none;
+            padding: 0.5rem 0.875rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        
+        nav a:hover {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 800px;
+            margin: 100px auto 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header with accent color */
+        .term-header {
+            margin-bottom: 2rem;
+        }
+        
+        .term-badge {
+            display: inline-block;
+            background: #eef2ff;
+            color: #3b82f6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            color: #1e293b;
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        
+        /* Definition box */
+        .definition {
+            background: linear-gradient(135deg, #eef2ff 0%, #ffffff 100%);
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 1.5rem 0;
+            border: 1px solid #e0e7ff;
+        }
+        
+        .definition strong {
+            color: #3b82f6;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Role box */
+        .role {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 1.5rem 0;
+        }
+        
+        .role strong {
+            color: #475569;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+            color: #334155;
+        }
+        
+        .example-box {
+            background: #fef3c7;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .example-box strong {
+            color: #d97706;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: #f1f5f9;
+            border-radius: 16px;
+            color: #475569;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 700px) {
+            .container { padding: 0 1rem; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="www.html">WWW</a>
+        <a href="tcpip.html">TCP/IP</a>
+        <a href="web-browsers.html">Browsers</a>
+        <a href="web-servers.html">Servers</a>
+        <a href="url.html">URL</a>
+        <a href="dns.html">DNS</a>
+        <a href="http.html">HTTP</a>
+        <a href="intranet.html">Intranet</a>
+        <a href="extranet.html">Extranet</a>
+        <a href="multitier.html">Multitier</a>
+        <a href="ftp.html">FTP</a>
+        <a href="html-language.html">HTML</a>
+        <a href="web1.html">Web 1.0</a>
+        <a href="web2.html">Web 2.0</a>
+        <a href="web3.html">Web 3.0</a>
+        <a href="web4.html">Web 4.0</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="term-header">
+        <!-- <div class="term-badge">WWW</div> -->
+        <h1>Extranet</h1>
+    </div>
+    
+    <div class="definition">
+        <strong>📖 Definition</strong>
+        An extranet is an extension of an intranet that allows limited, secure access to external parties like suppliers, partners, or customers.
+    </div>
+    
+    <img src="images/extranet.webp" alt="extranet Image">
+    
+    <div class="role">
+        <strong>🔧 Role in Technology</strong>
+        Extranets enable secure collaboration between an organization and its trusted external partners.
+    </div>
+    
+    <h2>How It Works</h2>
+    <p>TThe organization uses VPNs or authentication systems to grant limited access to specific external users.</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+        <li>Secure access for external partners</li>
+        <li>Limited to specific resources</li>
+        <li>Uses authentication and encryption</li>
+        <li>Enables B2B collaboration</li>
+    </ul>
+    
+    <div class="example-box">
+        <strong>💡 Real-World Example</strong><br>
+        A supplier logging into a retailer's system to check inventory levels and submit invoices.
+    </div>
+    
+    <footer>
+        Admission: 220526 | Internet Terminology Project
+    </footer>
+</div>
+
+</body>
+</html>
